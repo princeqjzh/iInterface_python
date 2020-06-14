@@ -2,7 +2,7 @@ import requests
 import urllib3
 
 
-class HttpClient():
+class HttpClient:
     """Generic Http Client class"""
 
     def __init__(self, disable_ssl_verify=False, timeout=60):
