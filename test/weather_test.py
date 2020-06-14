@@ -25,7 +25,7 @@ class Weather(TestCase):
 
     def test_3(self):
         city_code = '101020100'
-        exp_city = '上海1'
+        exp_city = '上海'
         self._test(city_code, exp_city)
 
     def _test(self, city_code, exp_city):
