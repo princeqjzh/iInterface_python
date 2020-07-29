@@ -24,3 +24,5 @@ app-test.log.*
 *.class
 report.html
 *.pyc
+pytests.xml
+allure-report
