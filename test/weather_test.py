@@ -9,9 +9,8 @@ class Weather(TestCase):
     """Weather api test cases"""
 
     def setUp(self):
-        """"""
+        """Setup of the test"""
 
-        super().setUp()
         self.host = 'http://www.weather.com.cn'
         self.ep_path = '/data/cityinfo'
         self.client = HttpClient()
