@@ -6,7 +6,7 @@
 - git
 
 依赖准备：
-pip install nose-allure-plugin
+pip install allure-pytest
 
 运行命令：
-pytest -s -v test/weather_test.py --alluredir ./allure-results
+pytest -sv test/weather_test.py --alluredir ./allure-results
