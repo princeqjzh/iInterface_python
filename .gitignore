@@ -26,3 +26,4 @@ report.html
 *.pyc
 pytests.xml
 allure-report
+web_*
