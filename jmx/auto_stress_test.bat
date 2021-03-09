@@ -25,6 +25,7 @@ COPY %jmx_template_filename% %jmx_filename%
 echo Generate jmx file %jmx_filename%
 
 rem 替换并发数
+rem 需要在windows系统引入 sed.exe命令，用法与linux三剑客中的sed雷同
 sed -i "s/thread_num/%num%/g" %jmx_filename%
 
 rem JMeter 静默压测
