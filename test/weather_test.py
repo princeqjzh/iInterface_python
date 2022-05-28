@@ -1,6 +1,9 @@
 import allure
 
 from unittest import TestCase
+
+from nose.plugins.attrib import attr
+
 from library.httpclient import HttpClient
 
 
@@ -15,18 +18,21 @@ class Weather(TestCase):
         self.ep_path = '/data/cityinfo'
         self.client = HttpClient()
 
+    @attr('testa')
     @allure.story('Test of ShenZhen')
     def test_1(self):
         city_code = '101280601'
         exp_city = '深圳'
         self._test(city_code, exp_city)
 
+    @attr('testb')
     @allure.story('Test of BeiJing')
     def test_2(self):
         city_code = '101010100'
         exp_city = '北京'
         self._test(city_code, exp_city)
 
+    @attr('testa')
     @allure.story('Test of ShangHai')
     def test_3(self):
         city_code = '101020100'
