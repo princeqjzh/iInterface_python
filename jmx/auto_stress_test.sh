@@ -33,6 +33,7 @@ do
     fi
 
     # JMeter 静默压测
+    echo ${jmeter_path}
     ${jmeter_path}/bin/jmeter -n -t ${jmx_filename} -l ${jtl_filename}
 
     # 生成Web压测报告
