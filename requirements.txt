@@ -1,5 +1,6 @@
 allure-pytest
 appium-python-client
+flaky
 pytest
 pytest-testconfig
 requests
